@@ -1,12 +1,9 @@
 # Movie Recommender System
 
 ## Overview
-This project implements a **content-based movie recommender system** that suggests movies similar to a user’s selected title. The model is deployed for seamless access via **Heroku**.
+This project implements a **content-based movie recommender system** that suggests movies similar to a user’s selected title.
 
 The system analyzes movie metadata (genres, description, keywords, etc.) to compute similarities and presents the top recommendations.
-
-## Demo
-Check out the walkthrough video: "Content-Based Recommender System with Heroku Deployment" ([youtube.com](https://www.youtube.com/watch?v=1xtrIEwY_zY&utm_source=chatgpt.com))
 
 ## Features
 - Processes a movie dataset (e.g., TMDB data).
@@ -35,18 +32,6 @@ python app.py
 - Open your browser at `http://127.0.0.1:5000/`.
 - Enter a movie name to retrieve the top 5 similar recommendations.
 
-### Heroku Deployment
-1. Log in to Heroku and create a new app.
-2. Set up a `Procfile` with:  
-   ```
-   web: gunicorn app:app
-   ```
-3. Commit and push to Heroku:
-   ```bash
-   git push heroku main
-   ```
-4. Visit `https://<your-heroku-app>.herokuapp.com` to use the recommendation system live.
-
 ## Project Structure
 ```
 movie_recommender_system/
@@ -54,7 +39,6 @@ movie_recommender_system/
 ├── app.py                    # Flask application
 ├── model.py                  # TF‑IDF + cosine similarity logic
 ├── requirements.txt          # Dependencies
-├── Procfile                  # Heroku deployment config
 └── README.md                 # Project overview
 ```
 
@@ -75,6 +59,3 @@ Contributions are welcome! Please consider:
 - Improving front-end UI (e.g., with Streamlit or React).
 - Enhancing dataset (posters, ratings, runtime).
 - Optimizing recommendation logic or caching popular queries.
-
-## License  
-*(Specify your preferred license here, e.g., MIT, Apache 2.0)*
